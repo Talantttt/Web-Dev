@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link rel="icon" type="webp" href="icon_ins.webp">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .homec {
+            display: flex;
+            align-items: center;
+            width: 465px;
+            height: 635px;
+        }
+
+        .home {
+            margin-right: 50px;
+            position: relative;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            max-width: 400px;
+            height: 408.9px;
+        }
+
+        .login-box {
+            background-color: white;
+            padding: 50px 40px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #3897f0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #2979ff;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .divider hr {
+            width: 40%;
+            border: 0;
+            border-top: 1px solid #dbdbdb;
+        }
+
+        .hr1 {
+            margin-right: 5px;
+        }
+
+        .divider span {
+            margin: 0 10px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        .hr2 {
+            margin-left: 5px;
+        }
+
+        .fb-login .fb-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .fb-btn:hover {
+            background-color: #165eab;
+        }
+
+        .forgot-password {
+            margin-top: 20px;
+        }
+
+        .forgot-password a {
+            font-size: 14px;
+            color: #00376B;
+            text-decoration: none;
+        }
+
+        .signup-container {
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            padding: 15px;
+            color: #999;
+        }
+
+        .signup-container p {
+            color: #000000;
+        }
+
+        .signup-container a {
+            color: #0095F6;
+            text-decoration: none;
+        }
+
+        .face {
+            color: #0095F6;
+            text-decoration: none;
+        }
+
+        .face_logo {
+            width: 18px;
+            height: 19.88px;
+        }
+
+        .download {
+            text-align: center;
+            ;
+            margin-top: 20px;
+        }
+
+        #google {
+            margin-top: 10px;
+            width: 134.28px;
+            height: 40px;
+        }
+
+        #microsoft {
+            margin-top: 10px;
+            width: 110.76;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="homec">
+        <img src="Снимок экрана 2025-02-01 152307.png" alt="back_screen" class="home">
+    </div>
+
+    <div class="login-container">
+        <div class="login-box">
+            <img src="ins_word_logo.png" alt="Instagram Logo" class="logo">
+            <form action="#" method="post">
+                <input type="text" placeholder="Телефон, имя пользователя или эл.адрес" class="input-field" required>
+                <input type="password" placeholder="Пароль" class="input-field" required>
+                <button type="submit" class="login-btn">Вход</button>
+            </form>
+            <div class="divider">
+                <hr class="hr1">
+                <span>или</span>
+                <hr class="hr2">
+            </div>
+            <div class="fb-login">
+                <img src="face_logo.png" class="face_logo">
+                <a href="#" class="face">Войти через Facebook</a>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Забыли пароль?</a>
+            </div>
+        </div>
+        <div class="signup-container">
+            <p>У вас ещё нет аккаунта? <a href="#">Зарегистрироваться</a></p>
+        </div>
+        <div class="download">
+            <p>Установите приложение</p>
+            <img src="google_down.png" alt="google_down" id="google">
+            <img src="microsoft.png" alt="microsoft" id="microsoft">
+        </div>
+    </div>
+</body>
+
+</html>
