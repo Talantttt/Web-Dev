@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Before the script...</p>
+
+  <script>
+    function ask(question, yes, no){
+        if(confirm(question)) yes();
+        else no();
+    }
+    ask("Did you agree?", 
+    () =>alert("You agreed."), 
+    () =>alert("You canceled the execution."));
+  </script>
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>

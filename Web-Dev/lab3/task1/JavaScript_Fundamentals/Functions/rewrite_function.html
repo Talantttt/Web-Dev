@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Before the script...</p>
+
+  <script>
+    let age = prompt("How old are you?");
+    function checkAge(age){
+        return (age>18) ? true : confirm("Did parents allow you?");
+    }
+    /*
+    with ||
+    function checkAge(age){
+        return (age>18) || confirm("Did parents allow you?");
+    }
+    */
+  </script>
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>

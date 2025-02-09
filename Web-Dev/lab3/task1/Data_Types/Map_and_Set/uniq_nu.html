@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Before the script...</p>
+
+  <script>
+    function unique(arr) {
+    /* your code */
+    }
+
+    let values = ["Hare", "Krishna", "Hare", "Krishna",
+    "Krishna", "Krishna", "Hare", "Hare", ":-O"
+    ];
+
+    alert( unique(values) ); // Hare, Krishna, :-O
+
+    function unique(arr) {
+        return Array.from(new Set(arr));
+    }
+
+  </script>
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>
