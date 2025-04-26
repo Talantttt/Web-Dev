@@ -1,0 +1,21 @@
+<div class="form-container">
+  <input type="text" [(ngModel)]="newTitle" placeholder="Title">
+  <input type="text" [(ngModel)]="newDescription" placeholder="Description">
+  <input type="number" [(ngModel)]="newID" placeholder="ID">
+  <input type="number" [(ngModel)]="newCategoryId" placeholder="Category ID">
+  <input type="text" [(ngModel)]="newType" placeholder="Type (e.g., movie)">
+  <input type="text" [(ngModel)]="newDate" placeholder="createdAt">
+  <button class="add-button" (click)="addItem()">Add</button>
+</div>
+
+<ul>
+  <li *ngFor="let item of items">
+    <span>{{item.title}}</span>
+    <div class="button-group">
+      <button class="delete-button" (click)="deleteItem(item.id)">Delete</button>
+      <button class="update-button" (click)="updateItem(item)">Update</button>
+    </div>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,94 @@
+/* Сброс стилей и базовые настройки */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Основной стиль страницы */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Контейнер формы */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Заголовок формы */
+h1 {
+  text-align: center;
+  color: #4b6cb7;
+  font-size: 24px;
+}
+
+/* Стиль для всех полей ввода */
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #4b6cb7;
+}
+
+/* Стиль для кнопки */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4b6cb7;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3a5f8c;
+}
+
+/* Стиль для отображения ошибок */
+small {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Стиль для контейнера ошибок (когда поля некорректны) */
+div {
+  margin-bottom: 15px;
+}
+
+/* Стиль для блока ошибок (если ошибка есть) */
+div * {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Добавим отступы на экранах с маленьким разрешением */
+@media (max-width: 480px) {
+  form {
+      width: 90%;
+  }
+}
